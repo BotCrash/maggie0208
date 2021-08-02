@@ -1,4 +1,5 @@
 import telebot
+import forcereply 
 
 
 bot = telebot.TeleBot("1910033477:AAFgTbZ6E-_KcgjEoQNpoPDSegx_ZGjy3Pk", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
