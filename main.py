@@ -11,7 +11,7 @@ def echo_all(message):
 	bot.reply_to(message, message.text)
 	
 	
- import types
+
 
 # Using the ReplyKeyboardMarkup class
 # It's constructor can take the following optional arguments:
