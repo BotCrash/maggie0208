@@ -1,4 +1,5 @@
 import telebot
+import types
 
 bot = telebot.TeleBot("1910033477:AAFgTbZ6E-_KcgjEoQNpoPDSegx_ZGjy3Pk", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
 
@@ -10,7 +11,7 @@ def echo_all(message):
 	bot.reply_to(message, message.text)
 	
 	
-from telebot import types
+ import types
 
 # Using the ReplyKeyboardMarkup class
 # It's constructor can take the following optional arguments:
@@ -25,7 +26,7 @@ itembtn1 = types.KeyboardButton('a')
 itembtn2 = types.KeyboardButton('v')
 itembtn3 = types.KeyboardButton('d')
 markup.add(itembtn1, itembtn2, itembtn3)
-tb.send_message(chat_id, "Choose one letter:", reply_markup=markup)
+bot.send_message(chat_id, "Choose one letter:", reply_markup=markup)
 
 # or add KeyboardButton one row at a time:
 markup = types.ReplyKeyboardMarkup()
@@ -36,7 +37,7 @@ itembtnd = types.KeyboardButton('d')
 itembtne = types.KeyboardButton('e')
 markup.row(itembtna, itembtnv)
 markup.row(itembtnc, itembtnd, itembtne)
-tb.send_message(chat_id, "Choose one letter:", reply_markup=markup)
+bot.send_message(chat_id, "Choose one letter:", reply_markup=markup)
 
 bot.polling()
 
