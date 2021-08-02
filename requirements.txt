@@ -1,5 +1,3 @@
 praw
 pytelegrambotapi
 pillow
-telegram
-ForceReply
