@@ -1,5 +1,5 @@
 import telebot
-import ForceReply 
+
 
 
 bot = telebot.TeleBot("1910033477:AAFgTbZ6E-_KcgjEoQNpoPDSegx_ZGjy3Pk", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
@@ -8,10 +8,7 @@ bot = telebot.TeleBot("1910033477:AAFgTbZ6E-_KcgjEoQNpoPDSegx_ZGjy3Pk", parse_mo
 def send_welcome(message):
 	bot.reply_to(message, "Howdy, how are you doing?")
 	
-@bot.message_handler(commands=['uwu'])
-def send_welcome(message):
-	markup = types.ForceReply(selective=False)
-bot.reply_to(message, "Send me another word:")
+
 
 	
 """# ForceReply: forces a user to reply to a message
