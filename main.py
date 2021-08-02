@@ -11,7 +11,7 @@ def send_welcome(message):
 @bot.message_handler(commands=['uwu'])
 def send_welcome(message):
 	markup = types.ForceReply(selective=False)
-bot.send_message(chat_id, "Send me another word:", reply_markup=markup)
+bot.reply_to(message, "Send me another word:")
 
 	
 """# ForceReply: forces a user to reply to a message
